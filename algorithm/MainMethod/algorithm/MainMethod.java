@@ -3,7 +3,7 @@ package algorithm;
 public class MainMethod {
 	public static void main(String[] args){
 		int [] li = {3, 5, 1, 8, 5, 3, -2, 7};
-		InsertSort.insertSort(li);
+		ShellSort.shellSort(li);
 		//Integer [] li = {3, 5, 1, 8, 5, 3, -2, 7};
 		//HeapSort.heapSort(li);
 		System.out.println();
