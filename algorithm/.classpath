@@ -5,6 +5,9 @@
 	<classpathentry kind="src" path="MainMethod"/>
 	<classpathentry kind="src" path="SmallUsefulMethod"/>
 	<classpathentry kind="src" path="dataStructure"/>
+	<classpathentry kind="src" path="LinearExpressStructure"/>
+	<classpathentry kind="src" path="GenericType"/>
+	<classpathentry kind="src" path="Exercise"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
