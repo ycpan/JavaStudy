@@ -4,6 +4,8 @@ public class MainMethod {
 	public static void main(String[] args){
 		int [] li = {3, 5, 1, 8, 5, 3, -2, 7};
 		ShellSort.shellSort(li);
+//		SlectionSort.slectionSort(li);
+//		InsertSort.insertSort(li);
 		//Integer [] li = {3, 5, 1, 8, 5, 3, -2, 7};
 		//HeapSort.heapSort(li);
 		System.out.println();

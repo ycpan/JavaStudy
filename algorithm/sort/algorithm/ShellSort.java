@@ -6,16 +6,14 @@ public class ShellSort {
 			for(int i = 0; i < gap; i ++){
 				for(int j = i + gap; j < list.length ; j = j + gap){
 					if(list[j] < list[j - gap]){
-						int temp = list[j];
-						int k = j - gap;
-						while(k >= 0 && list[k] > temp){
-							
+						int k,temp = list[j];
+						for(k = j - gap; k >= 0 && list[k] > temp; k = k - gap){
 							list[k + gap] = list[k];
-							k = k - gap;
 						}
 						list[k + gap] = temp;
 					}
 				}
+				
 			}
 		}
 	}
