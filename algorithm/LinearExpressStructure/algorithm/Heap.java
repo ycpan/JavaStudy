@@ -53,8 +53,20 @@ public class Heap <E extends Comparable<E>> {
 		}
 		return removeObject;
 	}
-	public int getSzie(){
+	public int getSize(){
 		return list.size();
+	}
+	public String toString() {
+		if(getSize() == 0) return null;
+		StringBuilder result = new StringBuilder("[");
+		for(int i = 0; i < list.size(); i++){
+			result.append(list.get(i));
+			if(i == list.size() - 1)
+				result.append("]");
+			else
+				result.append(",");
+		}
+		return result.toString();
 	}
 
 }

@@ -22,4 +22,7 @@ public class GenericStack<E> {
 	public boolean isEmpty(){
 		return list.isEmpty();
 	}
+	public String toString() {
+		return "Stack:" + list.toString();
+	}
 }
