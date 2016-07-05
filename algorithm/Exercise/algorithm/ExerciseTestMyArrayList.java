@@ -1,8 +1,9 @@
 package algorithm;
 
-public class TestList {
+public class ExerciseTestMyArrayList {
 	public static void main(String[] srgs) {
-		MyList<String> list = new MyArrayList<String>();
+		
+		ExerciseMyList<String> list = new ExerciseMyArrayList<String>();
 		list.add("America");
 		System.out.println("(1) " + list) ;
 		list.add(0,"China");
@@ -19,7 +20,7 @@ public class TestList {
 		System.out.println("(7) " + list) ;
 		list.remove(list.size() - 1);
 		System.out.println("(8) " + list) ;
+		
 		System.out.println("(9) " + list.remove(list.size() )) ;
-		System.out.println("(10) " + list.set(list.size() + 1,"GuiLin" )) ;
 	}
 }
