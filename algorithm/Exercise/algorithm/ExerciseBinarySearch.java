@@ -20,6 +20,7 @@ public class ExerciseBinarySearch {
 			if(key > list[middle])
 				low = middle + 1;
 		}
-		return -low - 1;//返回该插入的位置加一取负值
+		return -low - 1;//返回该插入的位置加一取负值,low在该插入位置的前面第一个，high在
+		//该插入位置前面第二个。
 	}
 }

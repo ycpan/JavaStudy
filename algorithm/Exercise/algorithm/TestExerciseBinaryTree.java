@@ -1,8 +1,8 @@
 package algorithm;
 
-public class TestBinaryTree {
+public class TestExerciseBinaryTree {
 	public static void main(String[] args) {
-		ExerciseBinaryTree<String> tree = new ExerciseBinaryTree<String>();
+		BinaryTree<String> tree = new BinaryTree<String>();
 		tree.insert("George");
 		tree.insert("Michael");
 		tree.insert("Tom");
@@ -22,7 +22,7 @@ public class TestBinaryTree {
 		printTree(tree);
 		}
 
-	public static void printTree(ExerciseBinaryTree<String> tree) {
+	public static void printTree(BinaryTree<String> tree) {
 		System.out.print("\nInorder (sorted):");
 		tree.inorder();
 		System.out.print("\nposorder (sorted):");
