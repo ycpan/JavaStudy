@@ -4,13 +4,15 @@
 	<classpathentry kind="src" path="sort"/>
 	<classpathentry kind="src" path="MainMethod"/>
 	<classpathentry kind="src" path="SmallUsefulMethod"/>
-	<classpathentry kind="src" path="dataStructure"/>
 	<classpathentry kind="src" path="LinearExpressStructure"/>
 	<classpathentry kind="src" path="GenericType"/>
 	<classpathentry kind="src" path="Exercise"/>
 	<classpathentry kind="src" path="CollectionFrame"/>
 	<classpathentry kind="src" path="ApplicationAlgorithm"/>
 	<classpathentry kind="src" path="Tree"/>
+	<classpathentry kind="src" path="AbstractAndInterface"/>
+	<classpathentry kind="src" path="Graph"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
