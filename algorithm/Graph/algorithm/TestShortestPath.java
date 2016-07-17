@@ -23,27 +23,40 @@ public class TestShortestPath {
 			{10, 3, 1435}, {10, 4, 496}, {10, 8, 781}, {10, 11, 239},
 			{11, 8, 810}, {11, 9, 1187}, {11, 10, 239}
 			};
-		WeightedGraph<String> graph1 = 
-				new WeightedGraph<String>(edges, vertices);
-		WeightedGraph<String>.ShortestPathTree tree1 =
-				graph1.getShortestPath(5);
-		tree1.printAllPaths();
-		System.out.print("Shortest path from Chicago to Houston: ");
-		java.util.List<String> path = tree1.getPath(11);
-		for (String s: path) {
-			System.out.print(s + " " );
-		}
-		edges = new int[][] {
-			{0, 1, 2}, {0, 3, 8},
-			{1, 0, 2}, {1, 3, 7}, {1, 3, 3},
-			{2, 1, 7}, {2, 3, 4}, {2, 4, 5},
-			{3, 0, 8}, {3, 1, 3}, {3, 2, 4},
-			{4, 2, 5}, {4, 3, 6}
-			};
-		WeightedGraph<Integer> graph2 = 
-				new WeightedGraph<Integer>(edges, 5);
-		WeightedGraph<Integer>.ShortestPathTree tree2 =
-				graph2.getShortestPath(3);
-		tree2.printAllPaths();
+//		WeightedGraph<String> graph1 = 
+//				new WeightedGraph<String>(edges, vertices);
+//		
+//		WeightedGraph<String>.ShortestPathTree tree1 =
+//				graph1.getShortestPath(5);
+//		tree1.printAllPaths();
+//		WeightedGraph<String>.MST tree1 =
+//				graph1.getMinimumSpanningTree();
+		//tree1.printTree();
+		
+		ExerciseMSTAndShortestPath<String> graph2 = 
+				new ExerciseMSTAndShortestPath<String>(vertices, edges);
+		graph2.getMST(0);
+		graph2.getShortestPath(0);
+		
+		
+		
+//		tree1.printAllPaths();
+//		System.out.print("Shortest path from Chicago to Houston: ");
+//		java.util.List<String> path = tree1.getPath(11);
+//		for (String s: path) {
+//			System.out.print(s + " " );
+//		}
+//		edges = new int[][] {
+//			{0, 1, 2}, {0, 3, 8},
+//			{1, 0, 2}, {1, 3, 7}, {1, 3, 3},
+//			{2, 1, 7}, {2, 3, 4}, {2, 4, 5},
+//			{3, 0, 8}, {3, 1, 3}, {3, 2, 4},
+//			{4, 2, 5}, {4, 3, 6}
+//			};
+//		WeightedGraph<Integer> graph2 = 
+//				new WeightedGraph<Integer>(edges, 5);
+//		WeightedGraph<Integer>.ShortestPathTree tree2 =
+//				graph2.getShortestPath(3);
+//		tree2.printAllPaths();
 		}
 }

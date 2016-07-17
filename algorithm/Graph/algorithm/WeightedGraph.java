@@ -3,6 +3,7 @@ import java.util.*;
 
 public class WeightedGraph<V> extends AbstractGraph<V> {
 	private List<PriorityQueue<WeightedEdge>> queues;
+	
 	public WeightedGraph(int[][] edges, V[] vertices) {
 		super(edges, vertices);
 		createQueues(edges, vertices.length);
@@ -79,15 +80,23 @@ public class WeightedGraph<V> extends AbstractGraph<V> {
 					continue;
 				}
 				WeightedEdge edge = queues.get(u).peek();
+				
 				if (edge.weight < smallestWeight) {
+//					System.out.println("edge.weight:" + edge.weight
+//					  + " smallestWeight:" + smallestWeight); 
 					v = edge.v;
 					smallestWeight = edge.weight;
 					parent[v] = u;
+					System.out.println("u:" + edge.u + " v:" + edge.v);
 					}
+				
 				}
+			System.out.println("***********");
 			T.add(v);
 			totalWeight += smallestWeight;
 		}
+		for(int e: parent)
+			System.out.print(e + " ");
 		return new MST(startingIndex, parent, T, totalWeight);
 	}
 	private List<PriorityQueue<WeightedEdge>> deepClone(

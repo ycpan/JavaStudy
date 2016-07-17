@@ -19,19 +19,11 @@ public class ExerciseTestDFS {
 				{10, 2}, {10, 4}, {10, 8}, {10, 11},
 				{11, 8}, {11, 9}, {11, 10}
 		};
-		ExerciseGraph<String> graph = 
-				new ExerciseUnweightedGraph<String>(edges, vertices);
-		ExerciseAbstractGraph<String>.Tree dfs = graph.dfs(5);
-		java.util.List<Integer> searchOrders =  dfs.getSearchOrders();
-		System.out.println(dfs.getNumberOfVerticesFoud() + 
-				" vertices are searched in thid DFS orders:");
-		for (int i = 0; i < searchOrders.size(); i ++)
-			System.out.print(graph.getVertex(searchOrders.get(i)) + " ");
-		System.out.println();
-		for (int i = 0; i < searchOrders.size(); i++)
-			if(dfs.getParent(i) != -1)
-				System.out.println("parent of " + graph.getVertex(i) +
-					" is " + graph.getVertex(dfs.getParent(i)));
-				
+		
+		
+		ExerciseGraphDFSAndBFS<String> graph1 = new  
+				ExerciseGraphDFSAndBFS<String>(edges, vertices);
+		graph1.getGraphDFS(5);
+		graph1.getGraphBFS(5);
 	}
 }

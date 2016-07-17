@@ -56,6 +56,7 @@ public abstract class ExerciseAbstractGraph<V> implements ExerciseGraph<V>{
 			this.u = u;
 			this.v = v;
 		}
+		
 	}
 	public int getSize() {
 		return vertices.size();
@@ -119,6 +120,7 @@ public abstract class ExerciseAbstractGraph<V> implements ExerciseGraph<V>{
 		searchOrders.add(v);
 		isVisited[v] = true;
 		for (int i : neighbors.get(v)) {
+			System.out.println(" v:" +v +" i:" + i );
 			if (!isVisited[i]) {
 				parent[i] = v;
 				dfs(i, parent, searchOrders, isVisited);

@@ -7,7 +7,7 @@ public class GenericQueue<E> {
 		list.addLast(e);
 	}
 	public E dequeue(){
-		return list.removeLast();
+		return list.removeFirst();
 	}
 	public int getSize(){
 		return list.size();
